@@ -1,0 +1,11 @@
+def tuplereturn(l1,n,target):
+      for i in range(n):
+          for j in range(i+1,n):
+                if l1[i]+l1[j]== target:
+                      return (l1[i],l1[j])
+      return "no match found"
+    
+n=int(input("enter no of elements"))
+l1=[int(input("enter element:")) for i in range(n)]
+target=int(input())
+print(tuplereturn(l1,n,target))
